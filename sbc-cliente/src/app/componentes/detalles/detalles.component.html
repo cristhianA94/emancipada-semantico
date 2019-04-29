@@ -1,0 +1,19 @@
+<h1 class="text-center">La Emancipada</h1>
+<div class="text-center">
+    <img src="https://images-eu.ssl-images-amazon.com/images/I/41QSXQ0yAKL.jpg" alt="" class="img-thumbnail">
+</div>
+<table class="table table-striped mt-3">
+  <thead>
+    <tr class="text-center">
+      <th scope="col">Predicado</th>
+      <th scope="col">Objeto</th>
+    </tr>
+  </thead>
+  <tbody>
+      <!-- presenta los datos del json -->
+    <tr *ngFor="let key of objectKeys(detalles)">
+      <td>{{key}}</td>
+      <td>{{detalles[key]}}</td>
+    </tr>
+  </tbody>
+</table>

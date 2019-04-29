@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:ns0="http://purl.org/gen/0.1#"
+         xmlns:ns1="https://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns2="http://dbpedia.org/ontology/"
+         xmlns:ns3="http://dbpedia.org/property/"
+         xmlns:ns4="http://sparql.cwrc.ca/ontologies/cwrc#"
+         xmlns:ns5="https://schema.org/"
+         xmlns:schema="http://schema.org/"
+         xmlns:ns6="http://dbpedia.org/page/"
+         xmlns:ns7="http://d-nb.info/standards/elementset/gnd#"
+         xmlns:ns8="http://id.loc.gov/vocabulary/relators/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:ns9="http://rdvocab.info/Elements/"
+         xmlns:ns10="http://purl.org/net/soron/"
+         xmlns:ns11="http://bblfish.net/work/atom-owl/2006-06-06/#"
+         xmlns:ns12="http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+         xmlns:ns13="http://xmlns.com/foaf/spec/#">
+
+  <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/MiguelRiofrio">
+    <foaf:firstName>Miguel</foaf:firstName>
+    <foaf:lastName>Riofrio</foaf:lastName>
+    <foaf:surname>Sanchez</foaf:surname>
+    <ns0:death>1879</ns0:death>
+    <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <ns2:occupation>Abogado</ns2:occupation>
+    <ns2:occupation>Escritor</ns2:occupation>
+    <ns2:occupation>Politico</ns2:occupation>
+    <ns2:occupation>Educador</ns2:occupation>
+    <ns2:occupation>Poeta</ns2:occupation>
+    <ns2:deputy>Loja en 1852</ns2:deputy>
+    <ns2:birthDate>7 de septiembre de 1822</ns2:birthDate>
+    <ns2:birthPlace rdf:resource="http://dbpedia.org/page/Loja,_Ecuador"/>
+    <ns3:citizenship rdf:resource="http://tarea.com/la_emancipada/resource/Ecuatoriano(a)"/>
+    <ns4:founder>6 Marzo</ns4:founder>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/LaEmancipada">
+    <ns2:literaryGenre rdf:resource="http://tarea.com/la_emancipada/resource/Novela"/>
+    <ns3:author rdf:resource="http://tarea.com/la_emancipada/resource/MiguelRiofrio"/>
+    <ns2:releaseDate>1846</ns2:releaseDate>
+    <ns2:releaseDate>Diario Quiteño</ns2:releaseDate>
+    <ns5:alternateName>La primera novela ecuatoriana</ns5:alternateName>
+    <schema:character rdf:resource="http://tarea.com/la_emancipada/resource/Rosaura"/>
+    <schema:character rdf:resource="http://tarea.com/la_emancipada/resource/Eduardo"/>
+    <schema:character rdf:resource="http://tarea.com/la_emancipada/resource/DonPedro"/>
+    <schema:character>
+      <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/ElSacerdote">
+        <ns6:Evangelicalism>
+          <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/Indios">
+            <ns4:construction>Carreteras</ns4:construction>
+          </rdf:Description>
+        </ns6:Evangelicalism>
+
+        <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns7:gender rdf:resource="http://tarea.com/la_emancipada/resource/Masculino"/>
+        <ns8:led>La Misa</ns8:led>
+      </rdf:Description>
+    </schema:character>
+
+    <schema:character rdf:resource="http://tarea.com/la_emancipada/resource/DonAnselmoDeAguirre"/>
+    <schema:character>El teniente politico</schema:character>
+    <schema:character>Los criados</schema:character>
+    <dc:date>1841</dc:date>
+    <ns4:PeriodSignificance>Romanticismo</ns4:PeriodSignificance>
+    <schema:seasons>Verano</schema:seasons>
+    <ns9:summarizationOfTheContent>El titulo de la novela se justifica por la decision erronea de Rosaura de aceptar un matrimonio y luego tomar la decision de emanciparse, de liberarse del yugo que su padre y luego su esposo significaria. Los problemas morales hacen que Rosaura tome esa decision, presionada por sus propias limitaciones y circunstancias, desafia todas las costumbres religiosas y politicas de la epoca y vive una vida libertina y escandalosa</ns9:summarizationOfTheContent>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/Rosaura">
+    <ns4:daughterOf rdf:resource="http://tarea.com/la_emancipada/resource/DonPedro"/>
+    <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:firstName>Rosaura</foaf:firstName>
+    <ns10:loves rdf:resource="http://tarea.com/la_emancipada/resource/Eduardo"/>
+    <ns11:entry>Convento</ns11:entry>
+    <ns7:gender rdf:resource="http://tarea.com/la_emancipada/resource/Femenino"/>
+    <ns2:demonym>Monjita</ns2:demonym>
+    <ns2:spouse rdf:resource="http://tarea.com/la_emancipada/resource/DonAnselmoDeAguirre"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/Eduardo">
+    <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <ns10:inCahootsWith rdf:resource="http://tarea.com/la_emancipada/resource/Rosaura"/>
+    <ns4:sonOf rdf:resource="http://tarea.com/la_emancipada/resource/Pedro"/>
+    <ns5:CommunicateAction rdf:resource="http://tarea.com/la_emancipada/resource/Rosaura"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/DonPedro">
+    <ns4:fatherOf rdf:resource="http://tarea.com/la_emancipada/resource/Rosaura"/>
+    <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/Malacatos">
+    <ns12:parish rdf:resource="http://dbpedia.org/page/Loja,_Ecuador"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tarea.com/la_emancipada/resource/DonAnselmoDeAguirre">
+    <ns4:lowerMiddleClass>Campesino</ns4:lowerMiddleClass>
+    <ns7:gender rdf:resource="http://tarea.com/la_emancipada/resource/Masculino"/>
+    <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <ns2:spouse rdf:resource="http://tarea.com/la_emancipada/resource/Rosaura"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dbpedia.org/page/Ecuador">
+    <ns2:capital rdf:resource="http://dbpedia.org/page/Quito"/>
+    <ns2:demonym rdf:resource="http://tarea.com/la_emancipada/resource/Ecuatoriano(a)"/>
+    <ns2:language rdf:resource="http://dbpedia.org/page/Spanish_language"/>
+    <ns2:language rdf:resource="http://dbpedia.org/page/Shuar_language"/>
+    <ns2:language rdf:resource="http://dbpedia.org/page/Kichwa_language"/>
+    <ns2:officialLanguage rdf:resource="http://dbpedia.org/page/Spanish_language"/>
+    <ns2:largestCity rdf:resource="http://dbpedia.org/page/Guayaquil"/>
+    <ns2:leaderTitle>Presidente</ns2:leaderTitle>
+    <ns2:leaderTitle>Vice Presidente</ns2:leaderTitle>
+    <ns1:type rdf:resource="http://dbpedia.org/ontology/PopulatedPlace"/>
+    <ns1:type rdf:resource="https://www.w3.org/2002/07/owl#Thing"/>
+    <ns1:type rdf:resource="http://dbpedia.org/ontology/Location"/>
+    <ns1:type rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <ns2:timeZone rdf:resource="http://dbpedia.org/page/Time_in_Ecuador"/>
+    <ns3:currencyCode>USD</ns3:currencyCode>
+    <ns3:legislature rdf:resource="http://dbpedia.org/page/National_Assembly_(Ecuador)"/>
+    <ns3:southwest>Pacific Ocean</ns3:southwest>
+    <ns3:west>Galápagos Islands</ns3:west>
+    <ns2:leader>
+      <rdf:Description rdf:about="http://dbpedia.org/page/Len%C3%ADn_Moreno">
+        <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+      </rdf:Description>
+    </ns2:leader>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dbpedia.org/page/Loja,_Ecuador">
+    <ns3:populationDemonym>Lojano</ns3:populationDemonym>
+    <ns1:type rdf:resource="http://dbpedia.org/class/yago/City108524735"/>
+    <ns1:type rdf:resource="http://dbpedia.org/class/yago/ProvincialCapital108695198"/>
+    <ns2:postalCode>110101, 110102, 110103, 110104</ns2:postalCode>
+    <ns13:term_nick>Musical Capital of Ecuador (en)</ns13:term_nick>
+    <ns2:wikiPageExternalLink>http://www.utpl.edu.ec/</ns2:wikiPageExternalLink>
+    <ns2:wikiPageExternalLink>http://www.unl.edu.ec</ns2:wikiPageExternalLink>
+    <ns2:birthPlace rdf:resource="http://dbpedia.org/page/Eduardo_Kingman"/>
+    <ns2:birthPlace rdf:resource="http://dbpedia.org/page/Isidro_Ayora"/>
+    <ns2:birthPlace>
+      <rdf:Description rdf:about="http://dbpedia.org/page/Benjam%C3%ADn_Carri%C3%B3n">
+        <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+      </rdf:Description>
+    </ns2:birthPlace>
+
+    <ns2:birthPlace>
+      <rdf:Description rdf:about="http://dbpedia.org/page/%C3%81ngel_Felic%C3%ADsimo_Rojas">
+        <ns1:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+      </rdf:Description>
+    </ns2:birthPlace>
+
+    <ns2:birthPlace rdf:resource="http://tarea.com/la_emancipada/resource/MiguelRiofrio"/>
+    <ns2:abstract>Loja, oficialmente Inmaculada Concepción de Loja, es una ciudad del Ecuador, capital de la provincia y cantón Loja, ubicada en el sur del país. Conocia como la &quot;Capital Cultural del Ecuador&quot;La ciudad es hogar de dos universidades importantes: la Universidad Nacional de Loja, fundada en 1859 por el Gobierno Federal de Loja, siendo la universidad en funciones más antigua del país después de la Universidad Central del Ecuador (Quito), y la Universidad Técnica Particular de Loja, fundada en 1971. Por su desarrollo y ubicación geográfica fue nombrada sede administrativa de la Región Sur o zona 7 comprendida por las provincias de El Oro, Loja y Zamora Chinchipe. (es)</ns2:abstract>
+    <ns2:isPartOf>
+      <rdf:Description rdf:about="http://dbpedia.org/page/Loja_Province">
+        <ns2:country rdf:resource="http://dbpedia.org/page/Ecuador"/>
+      </rdf:Description>
+    </ns2:isPartOf>
+
+    <ns2:isPartOf rdf:resource="http://dbpedia.org/page/Loja_Canton"/>
+    <ns3:subdivisionType rdf:resource="http://dbpedia.org/page/Provinces_of_Ecuador"/>
+    <ns2:motto>Loja Para Todos (Loja is for Everyone)</ns2:motto>
+  </rdf:Description>
+
+</rdf:RDF>
