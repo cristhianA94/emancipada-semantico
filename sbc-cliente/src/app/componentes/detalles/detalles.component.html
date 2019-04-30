@@ -2,18 +2,27 @@
 <div class="text-center">
     <img src="https://images-eu.ssl-images-amazon.com/images/I/41QSXQ0yAKL.jpg" alt="" class="img-thumbnail">
 </div>
+
+<!-- Buscador -->
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="La emancipada" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick=¨buscar()¨ type="submit">Buscar</button>
+    </form>
+</nav>
+
 <table class="table table-striped mt-3">
-  <thead>
-    <tr class="text-center">
-      <th scope="col">Predicado</th>
-      <th scope="col">Objeto</th>
-    </tr>
-  </thead>
-  <tbody>
-      <!-- presenta los datos del json -->
-    <tr *ngFor="let key of objectKeys(detalles)">
-      <td>{{key}}</td>
-      <td>{{detalles[key]}}</td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr class="text-center">
+            <th scope="col">Predicado</th>
+            <th scope="col">Objeto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- presenta los datos del json -->
+        <tr *ngFor="let key of objectKeys(detalles)">
+            <td>{{key}}</td>
+            <td>{{detalles[key]}}</td>
+        </tr>
+    </tbody>
 </table>

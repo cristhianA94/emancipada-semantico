@@ -6,7 +6,9 @@ import { SemanticoService } from '../../servicios/semantico/semantico.service';
   templateUrl: './detalles.component.html',
   styleUrls: ['./detalles.component.scss']
 })
-export class DetallesComponent implements OnInit {
+
+//export class DetallesComponent implements OnInit {
+export class DetallesComponent implements OnInit{
   detalles: any;
   objectKeys = Object.keys;
   constructor(
