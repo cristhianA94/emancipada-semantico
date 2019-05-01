@@ -1,0 +1,33 @@
+<!-- Buscador -->
+<div class="formulario text-center mt-5">
+    <img src="http://data.utpl.edu.ec/sites/default/files/LinkedDataUTPL19_100.png" alt="" class="">
+    <form [formGroup]="buscadorForm" class="mt-3" (ngSubmit)="buscar()">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+                <div class="form-group">
+                    <input class="form-control form-control-lg" type="search" placeholder="Buscar" aria-label="Search" formControlName="palabra">
+                </div>
+            </div>
+        </div>
+        <button id="boton" class="btn btn-outline-primary btn-lg" [disabled]='!buscadorForm.valid'>Buscar</button>
+    </form>
+</div>
+
+
+<div class="mt-3" *ngIf="resultado">
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr class="text-center">
+                <th scope="col">Predicado</th>
+                <th scope="col">Objeto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- presenta los datos del json -->
+            <tr *ngFor="let key of objectKeys(detalles)">
+                <td>{{key}}</td>
+                <td>{{detalles[key]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

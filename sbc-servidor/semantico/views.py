@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
 import rdflib
+from rdflib.serializer import Serializer
+
 
 # detalles de obra
 def detalles(request):
@@ -25,3 +27,16 @@ def detalles(request):
 # retorna json con los datos obtenidos del
     return JsonResponse(data)
     
+def buscador(request):
+    if request.method == 'GET':
+        g=rdflib.Graph()
+        g.parse("Emancipada_final.rdf")
+        data = {}
+        palabra = request.GET['palabra']
+        query =  'SELECT ?s ?p ?o  WHERE { ?s ?p ?o .FILTER regex(str(?s), "%s") .}'%(palabra)
+        for row in g.query(query):
+            sujeto = row.s.split("/")
+            predicado = row.p.split("/")
+            objeto = row.o.split("/")
+            data[predicado[-1]] = objeto[-1]
+        return JsonResponse(data)

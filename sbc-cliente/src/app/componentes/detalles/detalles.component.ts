@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SemanticoService } from '../../servicios/semantico/semantico.service';
-
 @Component({
   selector: 'app-detalles',
   templateUrl: './detalles.component.html',
@@ -11,6 +10,9 @@ import { SemanticoService } from '../../servicios/semantico/semantico.service';
 export class DetallesComponent implements OnInit{
   detalles: any;
   objectKeys = Object.keys;
+  resultado =  false;
+
+
   constructor(
     private semanticoService: SemanticoService,
   ) { }
@@ -19,8 +21,14 @@ export class DetallesComponent implements OnInit{
     // llama al servicio
     this.semanticoService.getDetalles().subscribe(data => {
       // subscribe los datos
-      this.detalles = data;
+      if(data){
+        this.detalles = data;
+        this.resultado = true;
+      }else{
+        this.resultado = false;
+      }
     });
   }
 
 }
+
