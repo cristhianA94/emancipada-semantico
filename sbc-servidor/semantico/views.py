@@ -16,26 +16,26 @@ def detalles(request):
     # iteracion del rdf mediante consulta sparql
     for row in g.query(
             # obtiene predicado y objeto de la uri de datos de empacipada
-            #'SELECT ?p ?o where { <http://tarea.com/la_emancipada/resource/LaEmancipada>  ?p  ?o}'):
-
             # Consulta de varios filtros
-            #'SELECT ?s ?p ?o  WHERE { ?s ?p ?o .FILTER (regex(str(?s), "Miguel") || regex(str(?o), "Miguel")) .}'):
             'SELECT ?s ?p ?o  WHERE { ?s ?p ?o .FILTER regex(str(?s), "emancipada") .}'):
-            
         # agrega datos a diccionario
         data[row.p] = row.o
 # retorna json con los datos obtenidos del
     return JsonResponse(data)
     
 def buscador(request):
+    #recibe el request del cliente
     if request.method == 'GET':
         g=rdflib.Graph()
         g.parse("Emancipada_final.rdf")
         data = {}
+        # asigna en una varible de la palabra del buscador reflejada en el request
         palabra = request.GET['palabra']
+        #consutal sparqul con filtro del text del buscador
         query =  'SELECT ?s ?p ?o  WHERE { ?s ?p ?o .FILTER regex(str(?s), "%s") .}'%(palabra)
         for row in g.query(query):
-            sujeto = row.s.split("/")
+            #separa las uris con / y las guarda en una variable cada parte de la tripleta
+            #sujeto = row.s.split("/")
             predicado = row.p.split("/")
             objeto = row.o.split("/")
             data[predicado[-1]] = objeto[-1]
